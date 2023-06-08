@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(24, 22, 22);
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.carousel{
+    position: relative;
+    margin-left: 33%;
+    height: 1auto;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.teste{
+    color: white;
+}
+
+th{
+    color: white;
+}
+
+td{
+    color: white;
+}
+
+.nav-item77{
+    margin-left: 400%;
+}
