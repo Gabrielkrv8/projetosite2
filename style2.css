@@ -1,22 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+    background-color: #000;
+    
+}
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
   }
-  
-  body {
-    margin: 0;
-    background-color: #000;
-    
-  }
+  .scroll-container {
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff37;
+  border-radius: 5px;
+
+}
   
   .navbar {
     /* Add a black background color to the top navigation */
     overflow: hidden;
-    font-family: arial;
-    margin-left: 55px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
     position:fixed;
     z-index:100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+
   }
   
   .navbar h1 {
@@ -55,13 +89,23 @@ html {
     background-color: black;
     position: absolute;
     left: 58%;
+    color: white;
+    font-weight: bold;
+
   }
   
   .navbar .children {
     float: right;
     margin-right: 150px;
   }
-  
+  .wrapper{
+    margin-top: 10rem;
+    /* padding-top: 10rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+  }
   .profile-icon {
     float: right;
     margin-top: 10px;
@@ -119,9 +163,8 @@ html {
   
   h3 {
     color: white;
-    font-family: arial;
     position: relative;
-    top: 35px;  
+    top: 5rem;  
     left: 50px;
   }
   
@@ -175,6 +218,23 @@ html {
   .item {
     transition: transform 500ms;
     border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+  }
+  .item img{
+   height: 200px;
+   width: 200px;
+     object-fit: cover ;
+  }
+  .item-description{
+
+   max-width: 200px;
+ 
+ 
   }
   
   .item:hover { 
@@ -184,7 +244,6 @@ html {
   
   .item:hover .item-description { 
       color: white;
-      font-family: arial;
       font-size: 10px;
       position: relative;
       transform: translate(-50%, 0);
@@ -347,29 +406,35 @@ html {
   }
        
   .arrow__btn:nth-of-type(1) {
-      top:0; bottom:0; left:0;
+      top:0;
+       bottom:0; 
+       left:0;
       background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   }
   
   .arrow__btn:nth-of-type(2) {
-       top:0; bottom:0; right: 0;
+       top:0; 
+       bottom:0;
+      right: 0;
+       background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+  #bt{
+      top:0; 
+       bottom:0;
+      right: 0;
        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   }
     
-  img {
-       border-radius: .5em;
-       width: 99%;
-  }
-      
+
   
-  /*Remove the arrow for Mobile*/
+  /* Remove the arrow for Mobile*/
   @media only screen and (max-width: 600px) {
     a.arrow__btn {
       display:none;
     }
   }
   
-  
+   
   
   
   
