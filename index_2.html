@@ -6,7 +6,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <link rel="stylesheet" type="text/css" href="style2.css"/>
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     
 </head>
 <body>
@@ -25,33 +28,37 @@
 </div>
        <h3>My List</h3> 
 <div class="wrapper">
-
- <div class="container1">
-  <section id="section1">
-    <a href="#section2" class="arrow__btn">‹</a>
-    
-    <div id="crown" class="item">
-    
-    <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
-      <div class="item-description">
-            <table>
-              <tr>
-                <td><i class="fas fa-play-circle fa-2x"></i></td>
-                <td><i class="far fa-check-circle fa-2x"></i></td>
-                <td><i class="far fa-thumbs-up fa-2x"></i></td>
-                <td><i class="far fa-thumbs-down fa-2x"></i></td>
-                <td><i class="fas fa-chevron-circle-down fa-2x"></i></td>
-              </tr>
-            </table>
-            <table>
-              <td><span>99% de aprovaçao </span> <
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper container1">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <section   id="section1">
+      <!-- <a href="#section2" class="arrow__btn">‹</a> -->
+      
+      <div id="crown" class="item">
+        
+        <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
+        <div class="item-description">
+          <table>
+            <tr>
+              <td><i class="fas fa-play-circle fa-2x"></i></td>
+              <td><i class="far fa-check-circle fa-2x"></i></td>
+              <td><i class="far fa-thumbs-up fa-2x"></i></td>
+              <td><i class="far fa-thumbs-down fa-2x"></i></td>
+              <td><i class="fas fa-chevron-circle-down fa-2x"></i></td>
+            </tr>
+          </table>
+          <table>
+            <td><span>99% de aprovaçao </span> <
             </table>
             <li> •  • </li>
+          </div>
         </div>
-     </div>
-    <div id="crazy-rich-asians" class="item">
-    <img src="./assets/fazendodinheiro.png" alt="Describe Image">
-      <div class="item-description">
+        <div id="crazy-rich-asians" class="item">
+          <img src="./assets/fazendodinheiro.png" alt="Describe Image">
+          <div class="item-description">
             <table>
               <tr>
                 <td><i class="fas fa-play-circle fa-2x"></i></td>
@@ -82,7 +89,7 @@
      </div>
   </div>
     <div id="second-act" class="item">
-     <a href=" https://sun.eduzz.com/1163656?fbclid=IwAR1z7_yjXOQs9hqw_I6Rz8u_HhXF0o60SwWDqoVmfBGSKsqvKAP6Bl2tDbE "><img src="./assets/domilaomilhao.PNG.png" alt="Describe Image"></a>
+      <a href=" https://sun.eduzz.com/1163656?fbclid=IwAR1z7_yjXOQs9hqw_I6Rz8u_HhXF0o60SwWDqoVmfBGSKsqvKAP6Bl2tDbE "><img src="./assets/domilaomilhao.PNG.png" alt="Describe Image"></a>
       <div class="item-description">
             <table>
               <tr>
@@ -115,17 +122,18 @@
             <li> • </li>
           </div>
        </div>
-   
-       <a href="#section2" id="bt" class="arrow__btn">›</a>
-  </section>
-   
-   
-  <section id="section2">
-    <a href="#section1" class="arrow__btn">‹</a>
+       
+       <!-- <a href="#section2" id="bt" class="arrow__btn">›</a> -->
+      </section>
+      </div>
 
-    <div id="orange-new-black" class="item">
-
-      <div class="item-description"> <a href="https://sun.eduzz.com/1799471?a=22803351&fbclid=IwAR3tFhhTRcVV88PgxPrfYHDyod9NAdO-zjZA8_xuFQ2suiI9DFQYlsQwyHQ" >    <img src="./assets/fazendodinheiro.png" alt="Describe Image"></a>
+    <div class="swiper-slide"> 
+      <section   id="section2">
+        <!-- <a href="#section1" class="arrow__btn">‹</a> -->
+        
+        <div id="orange-new-black" class="item">
+          
+          <div class="item-description"> <a href="https://sun.eduzz.com/1799471?a=22803351&fbclid=IwAR3tFhhTRcVV88PgxPrfYHDyod9NAdO-zjZA8_xuFQ2suiI9DFQYlsQwyHQ" >    <img src="./assets/fazendodinheiro.png" alt="Describe Image"></a>
             <table>
               <tr>
                 <td><i class="fas fa-play-circle fa-2x"></i></td>
@@ -141,7 +149,7 @@
      </div>
     <div id="narcos" class="item">
     <a href="https://sun.eduzz.com/1717025?fbclid=IwAR1faMv76v3Thspe6HDwqpeMVAQBDTU-l2HqjlZS4mam8NUtD3yTnhL8Meg /" ><img src="./assets/sutilartedeligarofodase.PNG.png" alt="Describe Image">  </a>
-      <div class="item-description">
+    <div class="item-description">
             <table>
               <tr>
                 <td><i class="fas fa-play-circle fa-2x"></i></td>
@@ -156,7 +164,7 @@
          </div>
      </div>
     <div id="money-heist" class="item">
-     <a href="https://sun.eduzz.com/939003?a=22803351&fbclid=IwAR1kxI-XZ34-1p60xdv-Bpfe6PEGDTLSEUYwn7jfM7GBg3XebN3pLrxnp0Q"><img src="./assets/Novos milionarios.PNG.png" alt="Describe Image"></a>
+     <a href="https://sun.eduzz.com/939003?a=22803351&fbclid=IwAR1kxI-XZ34-1p60xdv-Bpfe6PEGDTLSEUYwn7jfM7GBg3XebN3pLrxnp0Q"><img src="./assets/Novosmilionarios.PNG.png" alt="Describe Image"></a>
       <div class="item-description">
             <table>
               <tr>
@@ -205,17 +213,31 @@
              </div>
            </div>
 
-    <a href="#section1" class="arrow__btn">›</a>
-    </section>
-  </div>
+           <!-- <a href="#section1" class="arrow__btn">›</a> -->
+          </section>
+        </div>
+ </div>
 
- SECOND ROW
+        <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+      </div>
+
+
       <h3 id="title-2"> Trending Now</h3>
-       <div class="container2">
-  <section id="section3">
-    <a href="#section4" class="arrow__btn">‹</a>
+      <div class="swiper">
+       <div class="container2 swiper-wrapper ">
+<div class="swiper-slide">
+  <section  id="section3">
+    <!-- <a href="#section4" class="arrow__btn">‹</a> -->
     <div id="things-heard-seen" class="item">
-    <img src="./assets/pairicoepaipobre.PNG.png">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
       <div class="item-description">
             <table>
               <tr>
@@ -233,7 +255,7 @@
         </div>
      </div>
     <div id="iam-all-girls" class="item">
-    <img src="./assets/fazendodinheiro.png" alt="Describe Image">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
       <div class="item-description">
             <table>
               <tr>
@@ -251,7 +273,7 @@
         </div>
      </div>
     <div item="one-chance" class="item">
-    <img src="./assets/manual.PNG.png" alt="Describe Image">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
       <div class="item-description">
             <table>
               <tr>
@@ -267,7 +289,7 @@
      </div>
   </div>
     <div id="love-jacked" class="item">
-    <img src="./assets/pairicoepaipobre.PNG.png" alt="Describe Image">
+    <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
       <div class="item-description">
             <table>
               <tr>
@@ -283,7 +305,7 @@
           </div>
   </div>
     <div id="spiderman" class="item">
-    <img src="./assets/gluteospro.PNG (5).png" alt="Describe Image">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
       <div class="item-description">
             <table>
               <tr>
@@ -298,14 +320,14 @@
             <li> </li>
           </div>
        </div>
-    <a href="#section4" class="arrow__btn">›</a>
+    <!-- <a href="#section4" class="arrow__btn">›</a> -->
   </section>
-   
-   
-  <section id="section4">
-    <a href="#section3"  class="arrow__btn">‹</a>
+</div>
+<div class="swiper-slide">
+  <section  id="section4">
+    <!-- <a href="#section3"  class="arrow__btn">‹</a> -->
     <div id="orphan" class="item">
-    <img src="primeiravendaem3dias.PNG" alt="Describe Image">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
       <div class="item-description">
             <table>
               <tr>
@@ -321,7 +343,7 @@
           </div>
        </div>
     <div id="friends" class="item">
-    <img src="./assets/fazendodinheiro.png" alt="Describe Image">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
   <div class="item-description">
             <table>
               <tr>
@@ -337,7 +359,7 @@
           </div>
        </div>
     <div id="army-of-dead" class="item">
-    <img src="" alt="Describe Image">
+     <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
   <div class="item-description">
             <table>
               <tr>
@@ -353,7 +375,7 @@
           </div>
        </div>
     <div id="lucifer" class="item">
-    <img src="" alt="Describe Image">
+    <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
   <div class="item-description">
             <table>
               <tr>
@@ -369,7 +391,7 @@
           </div>
        </div>
     <div id="diary-mbw" class="item">
-    <img src="" alt="Describe Image">
+    <a href="https://sun.eduzz.com/1767553?a=22803351&fbclid=IwAR0_DcgHFxadeA8WY7tAFwZLR9ms9a7kI2yOqZyqqJSRYgc20VvW1UAiG-A" ><img src="./assets/primeiravenda.PNG.png"> </a>
         <div class="item-description">
             <table>
               <tr>
@@ -384,13 +406,28 @@
             <li></li>
           </div>
        </div>
-    <a href="#section3" class="arrow__btn">›</a>
+    <!-- <a href="#section3" class="arrow__btn">›</a> -->
     </section>
+</div>
       </div>
+              <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
       <h3 id="title-3"> Top 10 in the UK Today</h3>
-        <div class="container3"> 
-          <section id="section5">
-          <a href="#section6" id="arrow__btn" class="arrow__btn">‹</a>
+      <div class="swiper">
+        <div class="container3 swiper-wrapper"> 
+<div class="swiper-slide">
+          <section  id="section5">
+          <!-- <a href="#section6" id="arrow__btn" class="arrow__btn">‹</a> -->
             <span class="numbers">1</span>
               <img id="pic-1" class="item-2" src="./assets/primeiravenda.PNG.png">
               <span id="two" class="numbers">2</span>
@@ -401,11 +438,13 @@
               <img id="pic-4" class="item-2" src="./assets/gluteospro.PNG (5).png"pairico>
               <span id="five" class="numbers">5</span>
               <img id="pic-5" class="item-2" src="./assets/fazendodinheiro.png">
-            <a href="#section6" id="arrow__btn" class="arrow__btn">›</a>
+            <!-- <a href="#section6" id="arrow__btn" class="arrow__btn">›</a> -->
          </section>
-          
-          <section id="section6">
-            <a href="#section5" id="arrow__btn" class="arrow__btn">‹</a>
+</div>
+
+<div class="swiper-slide">
+          <section  id="section6">
+            <!-- <a href="#section5" id="arrow__btn" class="arrow__btn">‹</a> -->
               <span id="six" class="numbers">6</span>
               <img id="pic-6" class="item-2" src="./assets/primeiravendaemsegredos.PNG.png">
               <span id="seven" class="numbers">7</span> 
@@ -416,9 +455,24 @@
               <img id="pic-9" class="item-2" src="">
             <span id="ten" class="numbers">10</span>
               <img id="pic-10" class="item-2" src="">
-            <a href="#section5" id="arrow__btn" class="arrow__btn">›</a>
+            <!-- <a href="#section5" id="arrow__btn" class="arrow__btn">›</a> -->
+         </section>
+</div>
+
       </div>
+                    <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+      </div>
+
   </div>
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
